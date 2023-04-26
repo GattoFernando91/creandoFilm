@@ -1,5 +1,5 @@
 /***/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -30,9 +30,9 @@ header {
 .navBar li a {
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .navBar li a:hover {
@@ -60,12 +60,12 @@ nav {
 
 .contenedorServicios {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     flex-direction:column ;
     justify-content: space-between;
     width: 70%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     padding: 2%;
     padding-left: 3% ;
 }
@@ -95,13 +95,13 @@ footer div {
     width: 50%;
     gap: 1%;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     text-align: right;
     margin-right: 15px;
 }
 
 footer div p {
-    font-weight: 900;
+    font-weight: 400;
 }
 
 footer div a img {
