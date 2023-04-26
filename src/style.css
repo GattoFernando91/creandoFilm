@@ -81,7 +81,7 @@ footer {
     width: 100%;
     align-items: center;
     background-color: black;
-    height: 55px;
+    height: 5vh;
 }
 
 footer div {
@@ -124,5 +124,5 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
 }
