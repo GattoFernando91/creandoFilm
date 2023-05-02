@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import { NavBar } from "./components/NavBar";
 import { Logo } from "./components/Logo"
 import { ItemListContainer } from "./components/ItemListContainer";
@@ -14,7 +13,7 @@ function App() {
       <NavBar />
     </header>
     <body>
-      <ItemListContainer />
+    <ItemListContainer greeting="¡Bienvenido, estos son nuestros servicios!" />
     </body>
     <footer>
       <Logo />

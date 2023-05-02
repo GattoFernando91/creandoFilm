@@ -1,8 +1,9 @@
-export const ItemListContainer = () => {
+export const ItemListContainer = (props) => {
     return (
         <>
             <div className="contenedorServicios">
                 <div>
+                    <h2>{props.greeting}</h2>
                     <h3>Campaña con Modelos</h3>
                     <ul className="">
                         <li>Paquete 1</li>
