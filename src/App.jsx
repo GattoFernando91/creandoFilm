@@ -2,7 +2,7 @@ import { NavBar } from "./components/NavBar";
 import { Logo } from "./components/Logo"
 import { Redes } from "./components/Redes";
 import './style.css';
-import { PaginaContacto, PaginaNosotros, PaginaProyectos, PaginaServicios } from './Pages'
+import { PaginaContacto, PaginaNosotros, PaginaProyectos, PaginaServicios, PaginaServiciosReels, PaginaServiciosModelos, PaginaServiciosFotoProducto} from './Pages'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Home() {
@@ -13,7 +13,11 @@ function Home() {
         <NavBar />
       </header>
       <body>
-        <h1>Bienvenidos a Creando Film</h1>
+        <div className="backgroundHome">
+        <div className="divH1">
+            <h1>Creando Film</h1>
+        </div>
+        </div>
       </body>
       <footer>
         <Logo />
@@ -32,6 +36,9 @@ function App() {
         <Route path="/Nosotros" element={<PaginaNosotros/>} />
         <Route path="/Proyectos" element={<PaginaProyectos/>} />
         <Route path="/Servicios" element={<PaginaServicios/>} />
+        <Route path="/Servicios/CampañaConModelos" element={<PaginaServiciosModelos/>} />
+        <Route path="/Servicios/Reels" element={<PaginaServiciosReels/>} />
+        <Route path="/Servicios/FotoProducto" element={<PaginaServiciosFotoProducto/>} />
       </Routes>
     </BrowserRouter>
   );

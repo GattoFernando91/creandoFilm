@@ -12,7 +12,7 @@ const PaginaContacto = () => {
                 <NavBar />
             </header>
             <body>
-                <h1>Contacto</h1>
+                <h2 className="h2Servicios">Contacto</h2>
             </body>
             <footer>
                 <Logo />

@@ -2,7 +2,6 @@ import { ItemListContainer } from "../../components/ItemListContainer";
 import { Logo } from "../../components/Logo"
 import { NavBar } from "../../components/NavBar"
 import { Redes } from "../../components/Redes"
-import '../../style.css';
 
 const PaginaServicios = () => {
     return (

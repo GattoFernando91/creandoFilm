@@ -11,7 +11,7 @@ const PaginaNosotros = () => {
                 <NavBar />
             </header>
             <body>
-                <h1>Nosotros</h1>
+                <h2 className="h2Servicios">Nosotros</h2>
             </body>
             <footer>
                 <Logo />
