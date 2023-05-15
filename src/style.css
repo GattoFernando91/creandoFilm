@@ -62,12 +62,11 @@ nav {
     text-decoration: none;
     font-weight: 400;
     display: flex;
-    flex-direction:column ;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding-left: 5%;
     font-family: 'Bebas Neue', cursive;
-    padding: 2%;
-    padding-left: 3% ;
 }
 
 .contenedorServicios h2 {
@@ -134,4 +133,111 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
+}
+
+.h2Servicios {
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.contenedorDivServicios1 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    transition: all 0.5s ease-out;
+}
+
+.contenedorDivServicios1:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.contenedorDivServicios2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    transition: all 0.5s ease-out;
+}
+
+.contenedorDivServicios2:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.contenedorDivServicios3 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    transition: all 0.5s ease-out;
+}
+
+.contenedorDivServicios3:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.color {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 1s ease;
+}
+
+.color:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.navlinkServicios {
+    text-decoration: none;
+}
+
+.pServicios {
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+    font-weight: 400;
+}
+
+.mainServiciosMenu {
+    height: 100%;
+    background-image: url("./assets/img/FondoNegro.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: normal;
+}
+
+.mainServiciosMenu div img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.textImgServicios {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

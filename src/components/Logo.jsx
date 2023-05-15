@@ -1,10 +1,13 @@
+import React from "react";
 import CreandoLogo from "../assets/img/CreandoLogo.png"
+import { NavLink } from "react-router-dom";
+
 
 export const Logo = () => {
     return (
         <>
         <div>
-            <a href="./index.html"><img src={CreandoLogo} alt="" className="logoCreando" /></a>
+            <NavLink to="/"><img src={CreandoLogo} alt="" className="logoCreando" /></NavLink>
         </div>
         </>
     )

@@ -1,34 +1,41 @@
-export const ItemListContainer = (props) => {
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import FotoModelo from '../assets/img/Servicios/FotoModelo.png'
+import FotoProducto from '../assets/img/Servicios/FotoProducto.png'
+import Reel from '../assets/img/Servicios/Reel.png'
+
+export const ItemListContainer = () => {
     return (
         <>
+        <section className="mainServiciosMenu">
+            <h2 className="h2Servicios">Servicios</h2>
             <div className="contenedorServicios">
-                <div>
-                    <h2>{props.greeting}</h2>
-                    <h3>Campaña con Modelos</h3>
-                    <ul className="">
-                        <li>Paquete 1</li>
-                        <li>Paquete 2</li>
-                        <li>Paquete 3</li>
-                        <li>Paquete 4</li>
-                    </ul>
+                <div className="contenedorDivServicios1">
+                    <NavLink to="/Servicios-CampañaConModelos" className="navlinkServicios">
+                        <img className='color' src={FotoModelo} alt="" />
+                        <div className='textImgServicios'>
+                            <p className='pServicios'>Campaña con Modelos</p>
+                        </div>
+                    </NavLink>
                 </div>
-                <div>
-                    <h3>Reels</h3>
-                    <ul className="">
-                        <li>Paquete 1</li>
-                        <li>Paquete 2</li>
-                        <li>Paquete 3</li>
-                    </ul>
+                <div className="contenedorDivServicios2">
+                    <NavLink to="/Servicios-Reels" className="navlinkServicios">
+                        <img className='color' src={Reel} alt="" />
+                        <div className='textImgServicios'>
+                            <p className='pServicios'>Reels</p>
+                        </div>
+                    </NavLink>
                 </div>
-                <div>
-                    <h3>Foto Producto</h3>
-                    <ul className="">
-                        <li>Paquete 1</li>
-                        <li>Paquete 2</li>
-                        <li>Paquete 3</li>
-                    </ul>
+                <div className="contenedorDivServicios3">
+                    <NavLink to="/Servicios-FotoProducto" className="navlinkServicios">
+                        <img className='color' src={FotoProducto} alt="" />
+                        <div className='textImgServicios'>
+                            <p className='pServicios'>Foto Producto</p>
+                        </div> 
+                    </NavLink>
                 </div>
             </div>
+        </section>
         </>
     )
 };
