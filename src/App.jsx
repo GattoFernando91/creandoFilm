@@ -3,6 +3,7 @@ import { Logo } from "./components/Logo"
 import { Redes } from "./components/Redes";
 import './style.css';
 import { PaginaContacto, PaginaNosotros, PaginaProyectos, PaginaServicios, PaginaServiciosReels, PaginaServiciosModelos, PaginaServiciosFotoProducto} from './Pages'
+import { PaginaCart } from "./Pages/cartPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Home() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Servicios/CampañaConModelos" element={<PaginaServiciosModelos/>} />
         <Route path="/Servicios/Reels" element={<PaginaServiciosReels/>} />
         <Route path="/Servicios/FotoProducto" element={<PaginaServiciosFotoProducto/>} />
+        <Route path="/Cart" element={<PaginaCart/>} />
       </Routes>
     </BrowserRouter>
   );
