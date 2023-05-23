@@ -1,0 +1,42 @@
+.item {
+    width: 33%;
+    color: white;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    padding: 0.5%;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}
+
+.divContainerCard { 
+    height: 80%;
+}
+
+.card {
+    font-family: 'Bebas Neue', cursive;
+    width: 25%;
+    height: 65%;
+    margin: 2%;
+    background-image: url("../../assets/img/FondoCard.jpeg");
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2%;
+    justify-content: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card p {
+    margin: 10px 0;
+    padding: 4%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+
+

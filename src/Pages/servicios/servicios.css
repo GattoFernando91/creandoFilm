@@ -1,0 +1,33 @@
+.navBarServicios {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.navBarServicios li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.navBarServicios li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navBarServicios li a:hover {
+    color: white;
+}
+
+.navBarServicios li:hover {
+    transform: scale(1.1);
+}
+
+.navServicios {
+    width: 100%;
+}

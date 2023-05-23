@@ -1,0 +1,26 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navBar li a:hover {
+    color: white;
+}
+
+.navBar li:hover {
+    transform: scale(1.1);
+}
