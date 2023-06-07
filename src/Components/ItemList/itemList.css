@@ -1,0 +1,14 @@
+.itemListContainer {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 30px
+}
+
+.card {
+    background-color: #f0f0f0;
+    width: 90%;
+    height: 100%;
+}

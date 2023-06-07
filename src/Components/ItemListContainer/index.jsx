@@ -31,9 +31,10 @@ const ItemListContainer = () => {
                         <h2 className="h2Servicios">Servicios</h2>
                 <nav className="navServicios">   
                         <ul className="navBarServicios">
-                                <li><NavLink to='/Servicios/CampañaConModelos'>Campaña con Modelos</NavLink></li>
-                                <li><NavLink to='/Servicios/Reels'>Reels</NavLink></li>
-                                <li><NavLink to='/Servicios/FotoProducto'>Foto Producto</NavLink></li>
+                            <li><NavLink to='/Servicios'>Todos</NavLink></li>
+                            <li><NavLink to='/Servicios/CampañaConModelos'>Campaña con Modelos</NavLink></li>
+                            <li><NavLink to='/Servicios/Reels'>Reels</NavLink></li>
+                            <li><NavLink to='/Servicios/FotoProducto'>Foto Producto</NavLink></li>
                         </ul>
                 </nav>
         {/* <ItemCount initial={1} stock={5} onAdd={onAdd}/> */}

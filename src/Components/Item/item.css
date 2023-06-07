@@ -37,6 +37,30 @@
     font-weight: 200;
 }
 
+.counter {
+    padding-bottom: 8%;
+}
+
+.counter button {
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px ;
+}
+
+.counter span {
+    font-size: 20px ;
+}
+
+
+.counter div button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 1%;
+}
+
 
 
 
