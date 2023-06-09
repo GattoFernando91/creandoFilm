@@ -14,8 +14,8 @@
 
 .card {
     font-family: 'Bebas Neue', cursive;
-    width: 25%;
-    height: 65%;
+    width: 100%;
+    height: 100%;
     margin: 2%;
     background-image: url("../../assets/img/FondoCard.jpeg");
     border-radius: 10px;
@@ -59,6 +59,31 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     margin: 1%;
+}
+
+.linkP {
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px ;
+}
+
+.buttonItem {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    height: auto;
+    max-width: 100%;
+}
+
+.divItem {
+    margin: 10px 0;
+    padding: 4%;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 13%;
 }
 
 

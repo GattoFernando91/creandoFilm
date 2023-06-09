@@ -1,30 +1,27 @@
 import React, { useEffect, useState} from 'react'
-import {itemsServicios, ItemCount, ItemList} from '../index'
+import {ItemList} from '../index'
 import { NavLink, useParams } from 'react-router-dom'
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
 
 const ItemListContainer = () => {
 
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
     
-    const {ServiciosId} = useParams()
+    const {ServiciosId} = useParams();
 
     useEffect (() => {
-        const getData  = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(itemsServicios)
-            }, 1000)
-        })
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'itemServicios');
         if (ServiciosId) {
-            getData.then(res => setData (res.filter(itemsServicios => itemsServicios.category === ServiciosId)))
+            const queryFilter = query(queryCollection, where('category', '==', ServiciosId)) 
+            getDocs(queryFilter)
+                .then(res => setData(res.docs.map(itemServicios => ({ id: itemServicios.id, ...itemServicios.data() }))))
         } else {
-            getData.then(res => setData(res))
+            getDocs(queryCollection)
+                .then(res => setData(res.docs.map(itemServicios => ({ id: itemServicios.id, ...itemServicios.data() }))))
         }
-
+        
     }, [ServiciosId])
-
-    const onAdd = (quantity) => {
-        console.log(`compraste ${quantity} unidades`)
-    }
 
     return (
         <>
@@ -37,7 +34,7 @@ const ItemListContainer = () => {
                             <li><NavLink to='/Servicios/FotoProducto'>Foto Producto</NavLink></li>
                         </ul>
                 </nav>
-        {/* <ItemCount initial={1} stock={5} onAdd={onAdd}/> */}
+        
         <ItemList data={data} />
         </>
     )
