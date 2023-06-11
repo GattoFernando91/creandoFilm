@@ -76,7 +76,7 @@ const Cart = () => {
                     clearInterval(countdownInterval);
                     clearCart();
                     navigate('/');
-                }, 5000); // Redirect after 5 seconds
+                }, 5000);
             });
     };
 
@@ -87,8 +87,10 @@ const Cart = () => {
     if (cart.length === 0) {
         return (
             <>
-                <p>No hay servicios en el carrito.</p>
-                <Link to='/Servicios'>Comprar Servicios</Link>
+                <div className="divCarrito">
+                    <p>No hay servicios en el carrito.</p>
+                    <Link to='/Servicios'>Comprar Servicios</Link>
+                </div>
             </>
         );
     }
@@ -99,13 +101,15 @@ const Cart = () => {
             {cart.map(product => <ItemCart key={product.id} product={product} />)}
             {!showModal && !purchaseSuccess && (
                 <>
-                    <p>Total: ${totalPrice}</p>
-                    <button onClick={openModal}>Completar Datos de Compra</button>
+                    <div className="divCarrito">
+                        <p className="pPrecio">Total: ${totalPrice}</p>
+                        <button className="buttonDatos" onClick={openModal}>Completar Datos de Compra</button>
+                    </div>
                 </>
             )}
     
             {showModal && !purchaseSuccess && (
-                <div className="modal">
+                <div className="modal divCarrito">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
                         <form>
@@ -121,9 +125,13 @@ const Cart = () => {
     
             {purchaseSuccess && (
                 <>
-                    <h2>Compra Realizada con Éxito!</h2>
-                    <p>En breve recibira un mail con la informacion.</p>
-                    <p>Será redirigido al Inicio en {countdown} segundos.</p>
+                    <div className="divCarrito">
+                        <div className="finalCompra">
+                            <h2>Compra Realizada con Éxito!</h2>
+                            <p>En breve recibira un mail con la informacion.</p>
+                            <p>Será redirigido al Inicio en {countdown} segundos.</p>
+                        </div>
+                    </div>
                 </>
             )}
         </>

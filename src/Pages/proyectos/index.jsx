@@ -26,7 +26,7 @@ const PaginaProyectos = () => {
         <blockquote
           className="instagram-media"
           data-instgrm-captioned
-          data-instgrm-permalink="https://www.instagram.com/p/creandofilm/"
+          data-instgrm-permalink="https://www.instagram.com/creandofilm/"
           data-instgrm-version="13"
           style={{ width: '50%' }}
         >

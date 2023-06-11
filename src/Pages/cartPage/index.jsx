@@ -1,4 +1,5 @@
 import { Cart } from "../../Components/Cart"
+import './cartPage.css'
 
 const PaginaCart = () => {
         return (

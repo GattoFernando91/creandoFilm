@@ -1,0 +1,51 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.divCarrito {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.divCarrito a {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding-top: 5%;
+}
+
+.divCarrito div form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.divCarrito div form input {
+    margin: 2%;
+    padding: 1%;
+}
+
+.divCarrito div button {
+    margin: 1%;
+    font-size: 14px;
+}
+
+.buttonDatos {
+    margin-bottom: 2%;
+}
+
+.pPrecio {
+    padding-bottom: 1%;
+    font-size: 32px;
+}
+
+.finalCompra h2 {
+    padding-bottom: 1%;
+    font-size: 32px;
+}
+
+.finalCompra p {
+    padding-bottom: 0.5%;
+}
